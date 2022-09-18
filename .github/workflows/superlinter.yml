@@ -26,4 +26,4 @@ jobs:
           
       - name: run playbook
         run: |
-          ansible-playbook -i inventory ansible/my_book.yml
+          ansible-playbook -i inventory ansible/my_book.yml -u ubuntu
