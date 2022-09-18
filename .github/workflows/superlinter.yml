@@ -24,6 +24,11 @@ jobs:
           # config: ${{ secrets.CONFIG }} # ssh_config; optional
           if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
           
+      - name: run task
+        run: |
+          pwd
+          ls-lart
+          
       - name: run playbook
         run: |
           ansible-playbook -i inventory ansible/my_book.yml -u ubuntu
