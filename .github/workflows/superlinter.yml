@@ -27,7 +27,7 @@ jobs:
       - name: run task
         run: |
           pwd
-          ls-lart
+          ls -lart
           
       - name: run playbook
         run: |
