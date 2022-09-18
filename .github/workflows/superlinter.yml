@@ -20,7 +20,7 @@ jobs:
         with:
           key: ${{ secrets.ANSIBLE_KEY }}
           name: id_rsa # optional
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          #known_hosts: ${{ secrets.KNOWN_HOSTS }}
           # config: ${{ secrets.CONFIG }} # ssh_config; optional
           if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
           
